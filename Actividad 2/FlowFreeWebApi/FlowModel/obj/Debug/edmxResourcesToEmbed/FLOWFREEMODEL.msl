@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBFLOWFREEModelStoreContainer" CdmEntityContainer="DBFLOWFREEEntities">
+    <EntitySetMapping Name="FlowFreeTable">
+      <EntityTypeMapping TypeName="DBFLOWFREEModel.FlowFreeTable">
+        <MappingFragment StoreEntitySet="FlowFreeTable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="PlayerName" ColumnName="PlayerName" />
+          <ScalarProperty Name="NumActions" ColumnName="NumActions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
