@@ -19,14 +19,18 @@ public class EssenceInstatiator : MonoBehaviour
     private float _lastSpawnedTime;
     private Dictionary<EssenceType, GameObject> EssencePrefabs;
     public float _spawnDeltaTime = 0.5f;
+    private float enemyprobability = 16.67f;
     public GameObject BlueEssencePrefab,
                       GreenEssencePrefab,
                       OrangeEssencePrefab,
                       PurpleEssencePrefab,
                       RedEssencePrefab,
-                      YellowEssencePrefab;
+                      YellowEssencePrefab,
+                      EnemyPrefab;
+    private PlayerControllerEsencia PlayerStatus;
     void Start()
     {
+        PlayerStatus = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerEsencia>();
         _lastSpawnedTime = Time.time;
         EssencePrefabs = new Dictionary<EssenceType, GameObject> {
             { EssenceType.Blue,     BlueEssencePrefab   },
@@ -41,15 +45,25 @@ public class EssenceInstatiator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - _lastSpawnedTime > _spawnDeltaTime)
+        if (Time.time - _lastSpawnedTime > _spawnDeltaTime && !PlayerStatus.isGameOver)
         {
             _lastSpawnedTime = Time.time;
-            InstantiateEssence();            
+            InstantiateEssence();
+            InstantiateEnemy();
         }       
     }
 
     void InstantiateEssence()
     {
         Instantiate(EssencePrefabs[(EssenceType)Random.Range(0, 6)], new Vector3(10, Random.Range(-4, 4), 0), Quaternion.identity);
+    }
+
+    void InstantiateEnemy()
+    {
+        if (Random.Range(0, 100) <= enemyprobability)
+        {
+            Instantiate(EnemyPrefab, new Vector3(10, Random.Range(-4, 4), 0), Quaternion.identity);
+        }
+        
     }
 }
