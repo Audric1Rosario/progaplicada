@@ -6,8 +6,8 @@ public class PlayerControllerEsencia : MonoBehaviour
 {
     // Start is called before the first frame update
     public TextMesh PlayerLifesText;
-    public GameObject GameOverText;
-    public AudioManager AudioManagerText;
+    private GameObject GameOverText;
+    private AudioManager AudioManagerText;
     public bool isGameOver = false;
     const float Y_MIN_LIMIT = -4.5f;
     const float Y_MAX_LIMIT = 4.5f;
@@ -41,6 +41,8 @@ public class PlayerControllerEsencia : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (isGameOver)
+            return;
         switch (other.gameObject.tag)
         {
             case "Blue":
@@ -77,3 +79,4 @@ public class PlayerControllerEsencia : MonoBehaviour
         Destroy(other.gameObject);
     }
 }
+ 
