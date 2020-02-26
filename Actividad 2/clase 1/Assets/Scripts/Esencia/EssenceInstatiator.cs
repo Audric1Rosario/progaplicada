@@ -55,14 +55,14 @@ public class EssenceInstatiator : MonoBehaviour
 
     void InstantiateEssence()
     {
-        Instantiate(EssencePrefabs[(EssenceType)Random.Range(0, 6)], new Vector3(10, Random.Range(-4, 4), 0), Quaternion.identity);
+        Instantiate(EssencePrefabs[(EssenceType)Random.Range(0, 6)], new Vector3(10, Random.Range(-4, 3), 0), Quaternion.identity);
     }
 
     void InstantiateEnemy()
     {
         if (Random.Range(0, 100) <= enemyprobability)
         {
-            Instantiate(EnemyPrefab, new Vector3(10, Random.Range(-4, 4), 0), Quaternion.identity);
+            Instantiate(EnemyPrefab, new Vector3(10, Random.Range(-4, 3), 0), Quaternion.identity);
         }
         
     }

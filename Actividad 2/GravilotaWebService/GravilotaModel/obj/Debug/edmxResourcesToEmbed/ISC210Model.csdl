@@ -10,5 +10,19 @@
   </EntityType>
   <EntityContainer Name="BDISC210Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="GravilotaScore" EntityType="Self.GravilotaScore" />
+    <EntitySet Name="EssenceScore" EntityType="BDISC210Model.EssenceScore" />
   </EntityContainer>
+  <EntityType Name="EssenceScore">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlayerName" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="BlueScore" Type="Int32" Nullable="false" />
+    <Property Name="GreenScore" Type="Int32" Nullable="false" />
+    <Property Name="OrangeScore" Type="Int32" Nullable="false" />
+    <Property Name="PurpleScore" Type="Int32" Nullable="false" />
+    <Property Name="RedScore" Type="Int32" Nullable="false" />
+    <Property Name="YellowScore" Type="Int32" Nullable="false" />
+  </EntityType>
 </Schema>

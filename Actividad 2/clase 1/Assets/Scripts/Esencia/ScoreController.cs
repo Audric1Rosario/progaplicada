@@ -5,36 +5,36 @@ using UnityEngine;
 public class ScoreController : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int[] _scores = new int[6];
+    public int[] Scores = new int[6];
     public TextMesh BlueScoreText, GreenScoreText, OrangeScoreText,
                       PurpleScoreText, RedScoreText, YellowScoreText;
     public void IncrementScore(EssenceType color)
     {
-        _scores[(int)color]++;
+        Scores[(int)color]++;
         switch (color)
         {
             case EssenceType.Blue:
-                BlueScoreText.text = _scores[(int)color].ToString();
+                BlueScoreText.text = Scores[(int)color].ToString();
                 break;
 
             case EssenceType.Green:
-                GreenScoreText.text = _scores[(int)color].ToString();
+                GreenScoreText.text = Scores[(int)color].ToString();
                 break;
 
             case EssenceType.Orange:
-                OrangeScoreText.text = _scores[(int)color].ToString();
+                OrangeScoreText.text = Scores[(int)color].ToString();
                 break;
 
             case EssenceType.Purple:
-                PurpleScoreText.text = _scores[(int)color].ToString();
+                PurpleScoreText.text = Scores[(int)color].ToString();
                 break;
 
             case EssenceType.Red:
-                RedScoreText.text = _scores[(int)color].ToString();
+                RedScoreText.text = Scores[(int)color].ToString();
                 break;
 
             case EssenceType.Yellow:
-                YellowScoreText.text = _scores[(int)color].ToString();
+                YellowScoreText.text = Scores[(int)color].ToString();
                 break;
         }
     }
