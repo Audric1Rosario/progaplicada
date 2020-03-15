@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+  <map>
+    <row><![CDATA[KKKKKKKKKKKKKKKKKKKJKKKKK]]></row>
+    <row><![CDATA[KKKKKKJBKKKKKKKKKKAJKKKKK]]></row>
+    <row><![CDATA[KKKKKBJABKKKKKKKKKBJAKKKA]]></row>
+    <row><![CDATA[KKKKBAJAABAAAAAAAAAJAKAKK]]></row>
+    <row><![CDATA[IIIIIIEIIIIIIIIIIIIEIIIII]]></row>
+    <row><![CDATA[KKBAABJBAAKKKKKKKKAJKKKKK]]></row>
+    <row><![CDATA[KKBBAAJABKKKKKKKKKKJKKKKK]]></row>
+    <row><![CDATA[KKKABAJBABKKKKKKKKAJKKKKK]]></row>
+    <row><![CDATA[KKKKABDIIIIIIIIIIIIEHKKKK]]></row>
+    <row><![CDATA[KKKKAABBBBAAAAABAAAJKKKKK]]></row>
+    <row><![CDATA[KKKKKKBABBAKKKKKKABJKKKKK]]></row>
+    <row><![CDATA[KKKKKKKKKKKKKKKKKKBJKKKKK]]></row>
+    <row><![CDATA[KKKKKKKKKKKKKKKKKAAJKKKKK]]></row>
+    <row><![CDATA[KKKKKKKKKKKKKKKKKKBJKKKKK]]></row>
+    <row><![CDATA[KKKKKKKKKBBKKKKKKKAJKKKKK]]></row>
+    <row><![CDATA[KKKABKKKAAAKKKKBAABJKKKKK]]></row>
+    <row><![CDATA[KBBBABBBBAABAABAAAAJKKKKK]]></row>
+    <row><![CDATA[IIIIIIEIIIIIIIIIIIIEHIIII]]></row>
+    <row><![CDATA[BBBBBAJBBBBAABABAABJABABB]]></row>
+    <row><![CDATA[KKKBABJABBBAAAAABBAJAAKKK]]></row>
+    <row><![CDATA[KKKKBAJBAAAKKKKKKAAJBKKKK]]></row>
+    <row><![CDATA[KKKKBBJBAKKKKKKKKKAJAKKKK]]></row>
+    <row><![CDATA[KKKKKBJAKKKKKKKKKKBJBKKKK]]></row>
+    <row><![CDATA[KKKKKBJAKKKKKKKKKKAJKKKKK]]></row>
+  </map>
+  <characters>
+    <character id="0" uniqueObjectName="Player" prefabName="Player" posX="32" posY="17" tag="Player"/>
+    <character id="1" uniqueObjectName="Morah" prefabName="Morah" posX="38" posY="11" tag="NPC"/>
+    <character id="2" uniqueObjectName="Lionel" prefabName="Lionel" posX="22" posY="11" tag="NPC"/>
+  </characters>
+  <items>
+    <item id="0" uniqueObjectName="Chest1" prefabName="ChestBanana" posX="1" posY="36" tag="EssenceItem"/>
+    <item id="1" uniqueObjectName="Chest2" prefabName="ChestCherry" posX="30" posY="39" tag="EssenceItem"/>
+    <item id="2" uniqueObjectName="Chest3" prefabName="ChestGrape" posX="57" posY="39" tag="EssenceItem"/>
+  </items>
+</level>
+

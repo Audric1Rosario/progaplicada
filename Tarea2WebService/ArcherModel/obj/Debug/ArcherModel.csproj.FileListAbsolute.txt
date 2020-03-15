@@ -1,0 +1,11 @@
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\ArcherModel.dll.config
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\ArcherModel.dll
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\ArcherModel.pdb
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\EntityFramework.dll
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\EntityFramework.xml
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\obj\Debug\ArcherModel.csprojAssemblyReference.cache
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\obj\Debug\ArcherModel.csproj.CopyComplete
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\obj\Debug\ArcherModel.dll
+C:\Users\Luisa Rosario\Desktop\progaplicada\Tarea2WebService\ArcherModel\obj\Debug\ArcherModel.pdb

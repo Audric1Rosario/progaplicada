@@ -26,5 +26,6 @@ namespace GravilotaModel
         }
     
         public virtual DbSet<GravilotaScore> GravilotaScore { get; set; }
+        public virtual DbSet<EssenceScore> EssenceScore { get; set; }
     }
 }

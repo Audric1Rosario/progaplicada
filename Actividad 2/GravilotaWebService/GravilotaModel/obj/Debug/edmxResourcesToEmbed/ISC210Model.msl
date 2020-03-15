@@ -10,5 +10,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="EssenceScore">
+      <EntityTypeMapping TypeName="BDISC210Model.EssenceScore">
+        <MappingFragment StoreEntitySet="EssenceScore">
+          <ScalarProperty Name="YellowScore" ColumnName="YellowScore" />
+          <ScalarProperty Name="RedScore" ColumnName="RedScore" />
+          <ScalarProperty Name="PurpleScore" ColumnName="PurpleScore" />
+          <ScalarProperty Name="OrangeScore" ColumnName="OrangeScore" />
+          <ScalarProperty Name="GreenScore" ColumnName="GreenScore" />
+          <ScalarProperty Name="BlueScore" ColumnName="BlueScore" />
+          <ScalarProperty Name="PlayerName" ColumnName="PlayerName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
