@@ -9,12 +9,19 @@ public class MapManager : MonoBehaviour
     // Start is called before the first frame update
     public GameObject GrassA, GrassB, RoadC, RoadD, RoadE, 
         RoadF, RoadG, RoadH, RoadI, RoadJ, TreeK;
+    public GameObject playerPrefab, morahPrefab, lionelPrefab, enemyPrefab;
+    Transform cellsContainer, charactersContainer;
     XmlDocument xmlDoc;
     GameObject currentPrefab = null;
     /*Cargando el mapa*/
     XmlNode currentNode;
     XmlNodeList nodesList;
 
+    private void Awake()
+    {
+        cellsContainer = GameObject.Find("Celdas").transform;
+        charactersContainer = GameObject.Find("Characters").transform;
+    }
     void Start()
     {
         xmlDoc = new XmlDocument();
@@ -76,7 +83,8 @@ public class MapManager : MonoBehaviour
                         currentPrefab = GrassA;
                         break;
                 }
-                Instantiate(currentPrefab, new Vector3(j, -i, 0), Quaternion.identity);
+                currentPrefab = Instantiate(currentPrefab, new Vector3(j, -i, 0), Quaternion.identity);
+                currentPrefab.transform.SetParent(cellsContainer);
             }
         }
         LoadCharacters();
@@ -93,20 +101,30 @@ public class MapManager : MonoBehaviour
             switch(currentElement.Attributes["prefabName"].Value)
             {
                 case "Player":
-                    currentPrefab = TreeK;  // En vez de tree seria un caracter
+                    currentPrefab = playerPrefab;  // En vez de tree seria un caracter
                     break;
-                case "Morah":
-                    break;
-                case "Lionel":
 
+                case "Morah":
+                    currentPrefab = morahPrefab;
                     break;
-                default:                    
+                
+                case "Lionel":
+                    currentPrefab = lionelPrefab;
+                    break;
+
+                case "Enemy":
+                    currentPrefab = enemyPrefab;
+                    break;
+
+                default:
+                    currentPrefab = TreeK;
                     break;                
             }
             newElement = Instantiate(currentPrefab, new Vector3(Convert.ToSingle(currentElement.Attributes["posX"].Value),
-                                                   Convert.ToSingle(currentElement.Attributes["posY"].Value)),
+                                                   -Convert.ToSingle(currentElement.Attributes["posY"].Value)),
                                                    Quaternion.identity);
             newElement.name = currentElement.Attributes["uniqueObjectName"].Value;
+            newElement.transform.SetParent(charactersContainer);
         }
     }
 }
