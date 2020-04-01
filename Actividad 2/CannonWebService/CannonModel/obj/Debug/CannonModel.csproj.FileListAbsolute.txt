@@ -1,0 +1,11 @@
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\CannonModel.dll.config
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\CannonModel.dll
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\CannonModel.pdb
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\EntityFramework.dll
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\EntityFramework.xml
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\obj\Debug\CannonModel.csprojAssemblyReference.cache
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\obj\Debug\CannonModel.csproj.CopyComplete
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\obj\Debug\CannonModel.dll
+C:\Users\Audric Rosario\Desktop\git\progaplicada\Actividad 2\CannonWebService\CannonModel\obj\Debug\CannonModel.pdb

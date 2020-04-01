@@ -37,7 +37,7 @@
     
     <!--Enemigos-->
     <character id="3" uniqueObjectName="Enemy1" prefabName="Enemy" posX="6" posY="4" tag="Enemy"/>
-    <character id="4" uniqueObjectName="Enemy2" prefabName="Enemy" posX="19" posY="8" tag="Enemy"/>
+    <character id="4" uniqueObjectName="Enemy2" prefabName="Enemy" posX="19" posY="12" tag="Enemy"/>
     <character id="5" uniqueObjectName="Enemy3" prefabName="Enemy" posX="6" posY="17" tag="Enemy"/>
     <character id="6" uniqueObjectName="Enemy4" prefabName="Enemy" posX="19" posY="17" tag="Enemy"/>
     <character id="7" uniqueObjectName="Enemy5" prefabName="Enemy" posX="6" posY="21" tag="Enemy"/>

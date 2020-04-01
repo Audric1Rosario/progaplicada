@@ -1,0 +1,25 @@
+Ubicación: 
+Nombre de escena: 
+Link: 
+
+Escena 1- Sala de mini-juegos (taberna)
+Realizado - Insertar fondo de la escena, a modo de taberna. [Quad]
+Realizado - Instanciar personaje que se desplaza desde vista superior. [Sprite, Rigidbody, Collider, Axes/Touches/Mouse Position/KeyCodes, Transform.Translate, Camera.ScreenToWorldPoints, Animation, Animator, GetComponent RigidBody.velocity, Time.deltaTime]
+Realizado - Limitar espacio desplazamiento jugador. [Collider]
+Realizado - Permitir seleccionar mini-juego. [Input.GetButton, LoadScene, SceneManager]
+Realizado - Agregar gestor de sonidos. [Audio Source]
+Realizado - Agregar música de fondo. [Audio Source]
+Realizado - Agregar efectos de sonido. [Audio Source]
+
+Ubicación: 
+Nombre de escena: 
+Link: 
+
+Escena 2- Menú principal
+Realizado - Insertar fondo de la escena. [Quad]
+Realizado - Insertar título y opciones de menú. [TextMeshPro con Bangers SDF como Fuente, amarillo y rojo]
+Realizado - Agregar comportamiento a las opciones de menú. [OnMouseEnter, OnMouseExit, Transform.localScale, LoadScene, SceneManager].
+Realizado - Permitir configurar opciones del juego. [PlayerPrefs, DataContractSerializer, Application.persistentDataPath, Canvas/GUI]
+Realizado - Agregar gestor de sonidos. [Audio Source]
+Realizado - Agregar música de fondo. [Audio Source]
+Realizado - Agregar efectos de sonido. [Audio Source]

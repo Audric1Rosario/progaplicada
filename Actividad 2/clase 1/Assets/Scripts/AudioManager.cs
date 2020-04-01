@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
                 BallCaptured.Play();
                 break;
             case SoundEffect.Explote:
-                BallCaptured.Play();
+                BallExplotion.Play();
                 break;
         }
     }

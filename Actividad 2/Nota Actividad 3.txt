@@ -1,0 +1,18 @@
+Ubicación: progaplicada/Actividad 2/clase 1/Assets/Scenes/
+Nombre de escena: Esencia
+Link: https://github.com/Audric1Rosario/progaplicada/blob/master/Actividad%202/clase%201/Assets/Scenes/ExplorationLevel.unity
+
+Escena 1.2- Esencia
+Realizado  - Insertar fondo de la escena, a modo de océano. [Quad]
+Realizado  - Crear personaje que se desplaza verticalmente. [Sprite, Rigidbody, Collider, Axes/Touches/Mouse Position/KeyCodes, Transform.Translate, Camera.ScreenToWorldPoints, Animation, Animator, GetComponent, RigidBody.velocity, Time.deltaTime, Mathf.Clamp]
+Realizado  - Generar esencias. [Instantiate, InvokeRepeating, Prefabs]
+Realizado  - Generar trampas, descontando vidas. [Instantiate, InvokeRepeating, Prefabs]
+Realizado  - Permitir capturar esencias, aumentando puntaje. [3D Text, Collider, OnTriggerEnter, Destroy, SendMessage]
+Realizado  - Agregar gestor de sonidos. [Audio Source]
+Realizado  - Agregar música de fondo. [Audio Source]
+Realizado  - Agregar efectos de sonido. [Audio Source]
+Realizado  - Permitir registrar puntaje en Servicio Web. [MVC Web API, Base de Datos]
+
+Links del webservice:
+Values Controller: https://github.com/Audric1Rosario/progaplicada/blob/master/Actividad%202/GravilotaWebService/GravilotaWebService/Controllers/EssenceController.cs
+ScriptUnity      : https://github.com/Audric1Rosario/progaplicada/blob/master/Actividad%202/clase%201/Assets/Scripts/Esencia/EssenceWebClient.cs
