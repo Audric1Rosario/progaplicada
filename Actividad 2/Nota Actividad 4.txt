@@ -1,0 +1,18 @@
+Ubicación: 
+Nombre de escena: 
+Link: 
+
+Realizado - Insertar fondo de la escena. [Quad]
+Realizado - Crear dianas para conteo. [Prefabs, SendMessage, RigidBody, BoxCollider]
+Realizado - Crear cañón que se desplaza verticalmente, a modo Ping-Pong. [Mathf.PingPong, Sprite, Mouse Position/KeyCodes, Transform.position, Time.deltaTime]
+Realizado - Permitir disparar bolas de cañon parabólicamente. [Instantiate, Prefabs, MousePosition, Angle]
+Realizado - Permitir controlar la velocidad inicial del disparo presionando la pantalla. [ProgressBar, touches, ButtonDown, ButtonUp, Rigidbody.velocity, componentes en X y Y, AddForce].
+Realizado - Agregar gestor de sonidos. [Audio Source]
+Realizado - Agregar música de fondo. [Audio Source]
+Realizado - Agregar efectos de sonido. [Audio Source]
+Realizado - Permitir registrar puntaje en Servicio Web. [MVC Web API, Base de Datos]
+
+
+Links del webservice:
+Values Controller: 
+ScriptUnity      : 

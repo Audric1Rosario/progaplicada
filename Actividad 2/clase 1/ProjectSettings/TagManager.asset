@@ -12,6 +12,8 @@ TagManager:
   - Yellow
   - Enemy
   - NPC
+  - Projectile
+  - target
   layers:
   - Default
   - TransparentFX
