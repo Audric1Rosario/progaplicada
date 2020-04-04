@@ -6,16 +6,18 @@ public class CannonController : MonoBehaviour
 {
     // Start is called before the first frame update
     private float temp;
-    public float SpeedCannonX = 10f;
+    public float SpeedCannonX = 40f;
     public float triggerSpeed = 10f, triggerAngle;    
     const float limitMinX = -8.0f, limitMaxX = 0;
     private Vector3 deltaPos, mousePosition;
     public GameObject CannonBallPrefab;
     public GameObject ProgressBar;
     DianaInstantiator _diana;
+    Rigidbody _myRigid;
     public float power;
     void Start()
     {
+        _myRigid = GetComponent<Rigidbody>();
         _diana = GameObject.Find("GlobalScriptsText").GetComponent<DianaInstantiator>();
         deltaPos = new Vector3();
     }
@@ -29,11 +31,18 @@ public class CannonController : MonoBehaviour
             deltaPos.y = 0;
             deltaPos.z = 0;
             deltaPos.x = Input.GetAxis("Horizontal") * Time.deltaTime * SpeedCannonX;
-            gameObject.transform.Translate(deltaPos);
+            /*gameObject.transform.Translate(deltaPos);
             gameObject.transform.position = new Vector3(Mathf.Clamp(gameObject.transform.position.x, limitMinX, limitMaxX),
                                               gameObject.transform.position.y,
-                                              gameObject.transform.position.z);
-
+                                              gameObject.transform.position.z);*/
+            if (Input.GetAxis("Horizontal") != 0)
+                _myRigid.velocity = new Vector3(Input.GetAxis("Horizontal") * 100f * Time.deltaTime, _myRigid.velocity.y);
+            // Otra forma 
+            // GetComponent<Rigidbody>().AddForce(new Vector3() * 40f * Time.deltaTime, 0f);            
+            if (Input.GetButtonDown("Jump"))
+                GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, 10f);
+            // Otra forma
+            // GetComponent<Rigidbody>().AddForce(0f, new Vector3() * 40f * Time.deltaTime);            
             // Calculating angle
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log(Input.mousePosition);

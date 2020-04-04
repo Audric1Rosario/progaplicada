@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2770975999516976675}
   - component: {fileID: 2770975999516976700}
   - component: {fileID: 2770975999516976673}
+  - component: {fileID: 947622764970568284}
   m_Layer: 0
   m_Name: diana
   m_TagString: target
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316ecd0db63dc7a4bafc3582056e7ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &947622764970568284
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770975999516976701}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

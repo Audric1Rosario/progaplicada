@@ -635,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98f6ad942db9db43911318d710e25dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: Level1
   GrassA: {fileID: 5960383130344407593, guid: 5a34bada521c899439e2d91befd60e86, type: 3}
   GrassB: {fileID: 1486612388720517528, guid: f3aac9bc0b514024788f77d31ff25734, type: 3}
   RoadC: {fileID: 4450691933132123202, guid: 32f5a70ff426c8d4cb7743f3a8020367, type: 3}
@@ -654,6 +655,23 @@ MonoBehaviour:
     type: 3}
   enemyPrefab: {fileID: 4030328094151590452, guid: b7162b134fc3be94cb914d4dad8c56fd,
     type: 3}
+  PlatformerGrass1: {fileID: 0}
+  PlatformerGrass2: {fileID: 0}
+  PlatformerGrass3: {fileID: 0}
+  PlatformerGrass4: {fileID: 0}
+  PlatformerGrass5: {fileID: 0}
+  PlatformerGrass6: {fileID: 0}
+  PlatformerGrass7: {fileID: 0}
+  PlatformerGrass8: {fileID: 0}
+  PlatformerGrass9: {fileID: 0}
+  PlatformerGrass10: {fileID: 0}
+  PlatformerGrass11: {fileID: 0}
+  PlatformerGrass12: {fileID: 0}
+  PlatformerGrass13: {fileID: 0}
+  PlatformerGrass14: {fileID: 0}
+  PlatformerGrass15: {fileID: 0}
+  PlatformerGrass16: {fileID: 0}
+  PlatformerGrass17: {fileID: 0}
 --- !u!1 &2059466910
 GameObject:
   m_ObjectHideFlags: 0
