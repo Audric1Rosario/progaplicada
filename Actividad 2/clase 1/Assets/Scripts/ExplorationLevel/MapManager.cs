@@ -7,6 +7,7 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public string currentLevel;
     public GameObject GrassA, GrassB, RoadC, RoadD, RoadE, 
         RoadF, RoadG, RoadH, RoadI, RoadJ, TreeK;
     public GameObject playerPrefab, morahPrefab, lionelPrefab, enemyPrefab;
@@ -17,19 +18,36 @@ public class MapManager : MonoBehaviour
     XmlNode currentNode;
     XmlNodeList nodesList;
 
+    // This is used in platflormer.
+    [Header("Platformer")]
+    public GameObject PlatformerGrass1, PlatformerGrass2, PlatformerGrass3, PlatformerGrass4, PlatformerGrass5,
+                      PlatformerGrass6, PlatformerGrass7, PlatformerGrass8, PlatformerGrass9, PlatformerGrass10,
+                      PlatformerGrass11, PlatformerGrass12, PlatformerGrass13, PlatformerGrass14, PlatformerGrass15,
+                      PlatformerGrass16, PlatformerGrass17;
+
     private void Awake()
     {
-        cellsContainer = GameObject.Find("Celdas").transform;
-        charactersContainer = GameObject.Find("Characters").transform;
+        if (currentLevel.Equals("Level1")) { 
+            cellsContainer = GameObject.Find("Celdas").transform;
+            charactersContainer = GameObject.Find("Characters").transform;
+        }
     }
     void Start()
     {
         xmlDoc = new XmlDocument();
         // -Para cargar el mapa
         //Debug.Log(Resources.Load<TextAsset>("Level1.xml").text);
-        xmlDoc.LoadXml(Resources.Load<TextAsset>("Level1").text);
+        if (currentLevel.Equals("Level1"))
+        {
+            xmlDoc.LoadXml(Resources.Load<TextAsset>("Level1").text);
+            LoadMap();
+        }
+        else { 
+            xmlDoc.LoadXml(Resources.Load<TextAsset>("PlatformerLevel1").text);
+            LoadPlatformerMap();
+        }
         //Debug.Log(xmlDoc.InnerXml);
-        LoadMap();
+        
         // Physics.IgnoreCollider
     }
 
@@ -90,6 +108,85 @@ public class MapManager : MonoBehaviour
         LoadCharacters();
     }
 
+    void LoadPlatformerMap()
+    {
+        currentPrefab = null;
+        /*Cargando el mapa*/
+        nodesList = xmlDoc.SelectNodes("//level/map/row");
+        for (int i = 0; i < nodesList.Count; i++)
+        {
+            currentNode = nodesList[i];
+            for (int j = 0; j < currentNode.InnerText.Length; j++)
+            {
+                switch (currentNode.InnerText[j])
+                {
+                    case 'A':
+                        currentPrefab = PlatformerGrass1;
+                        break;
+                    case 'B':
+                        currentPrefab = PlatformerGrass2;
+                        break;
+                    case 'C':
+                        currentPrefab = PlatformerGrass3;
+                        break;
+                    case 'D':
+                        currentPrefab = PlatformerGrass4;
+                        break;
+                    case 'E':
+                        currentPrefab = PlatformerGrass5;
+                        break;
+                    case 'F':
+                        currentPrefab = PlatformerGrass6;
+                        break;
+                    case 'G':
+                        currentPrefab = PlatformerGrass7;
+                        break;
+                    case 'H':
+                        currentPrefab = PlatformerGrass8;
+                        break;
+                    case 'I':
+                        currentPrefab = PlatformerGrass9;
+                        break;
+                    case 'J':
+                        currentPrefab = PlatformerGrass10;
+                        break;
+                    case 'K':
+                        currentPrefab = PlatformerGrass11;
+                        break;
+                    case 'L':
+                        currentPrefab = PlatformerGrass12;
+                        break;
+                    case 'M':
+                        currentPrefab = PlatformerGrass13;
+                        break;
+                    case 'N':
+                        currentPrefab = PlatformerGrass14;
+                        break;
+                    case 'O':
+                        currentPrefab = PlatformerGrass15;
+                        break;
+                    case 'P':
+                        currentPrefab = PlatformerGrass16;
+                        break;
+                    case 'Q':
+                        currentPrefab = PlatformerGrass17;
+                        break;
+                    case 'R':
+                        currentPrefab = PlatformerGrass1;
+                        break;
+                    default:
+                        currentPrefab = null;
+                        break;
+                }
+                if (currentPrefab != null)
+                {
+                    currentPrefab = Instantiate(currentPrefab, new Vector3(j, -i, 0), Quaternion.identity);
+                    currentPrefab.transform.SetParent(cellsContainer);
+                }
+            }
+        }
+        //LoadCharacters();
+    }
     void LoadCharacters()
     {
         GameObject newElement;

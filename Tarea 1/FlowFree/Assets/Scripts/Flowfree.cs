@@ -512,6 +512,24 @@ public class Flowfree : MonoBehaviour
 
     void Update()
     {
+        // Otra idea 
+        
+        /*
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+        {
+           // Golpeo 
+           
+        }
+        else
+        {
+            
+        }
+        */
+
+
         mousePosition = Input.mousePosition;
         if (_game != null)
         {
